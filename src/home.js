@@ -1,5 +1,25 @@
 function loadHome() {
-    const homeContentDiv = document.getElementById('content');
+    const contentDiv = document.getElementById('content');
+
+    const header = document.createElement('header');
+    header.className = 'header';
+
+    const homeTab = document.createElement('button');
+    homeTab.className = 'home-tab';
+    homeTab.innerText = 'home';
+
+    const menuTab = document.createElement('button');
+    menuTab.className = 'menu-tab';
+    menuTab.innerText = 'menu';
+
+    const contactTab = document.createElement('button');
+    contactTab.className = 'contact-tab';
+    contactTab.innerText = 'contact';
+
+    header.appendChild(homeTab);
+    header.appendChild(menuTab);
+    header.appendChild(contactTab);
+    contentDiv.appendChild(header);
 
     const homeHeroText = document.createElement('div');
     homeHeroText.className = 'home-hero-text'; 
@@ -15,9 +35,9 @@ function loadHome() {
     homeMainText.innerText = `are u ready? to eat? prepare... your body... your mind... 
     u never had food this good. EAT PRAY LOVE AND EAT AGAIN.`;
 
-    homeContentDiv.appendChild(homeHeroText);
-    homeContentDiv.appendChild(homeImg);
-    homeContentDiv.appendChild(homeMainText);
+    contentDiv.appendChild(homeHeroText);
+    contentDiv.appendChild(homeImg);
+    contentDiv.appendChild(homeMainText);
 }
 
 export default loadHome;
