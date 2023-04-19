@@ -15,7 +15,7 @@
   \**********************/
 /***/ (() => {
 
-eval("console.log('heyo');\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
+eval("const homeContentDiv = document.getElementById('content');\n\nconst homeHeroText = document.createElement('div');\nhomeHeroText.className = 'home-hero-text'; \nhomeHeroText.innerText = 'OH MY GOD, WHY IS THIS SO DELICIOUS?';\n\nconst homeImg = document.createElement('img');\nhomeImg.className = 'home-img';\nhomeImg.src = '../src/food.jpg';\nhomeImg.alt = 'Sauce being spooned over a salmon cutlet';\n\nconst homeMainText = document.createElement('div');\nhomeMainText.className = 'home-main-text';\nhomeMainText.innerText = `are u ready? to eat? prepare... your body... your mind... \nu never had food this good. EAT PRAY LOVE AND EAT AGAIN.`;\n\nhomeContentDiv.appendChild(homeHeroText);\nhomeContentDiv.appendChild(homeImg);\nhomeContentDiv.appendChild(homeMainText);\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
 
 /***/ })
 
