@@ -1,26 +1,6 @@
 function loadHome() {
     const contentDiv = document.getElementById('content');
 
-    const header = document.createElement('header');
-    header.className = 'header';
-
-    const homeTab = document.createElement('button');
-    homeTab.className = 'home-tab';
-    homeTab.innerText = 'home';
-
-    const menuTab = document.createElement('button');
-    menuTab.className = 'menu-tab';
-    menuTab.innerText = 'menu';
-
-    const contactTab = document.createElement('button');
-    contactTab.className = 'contact-tab';
-    contactTab.innerText = 'contact';
-
-    header.appendChild(homeTab);
-    header.appendChild(menuTab);
-    header.appendChild(contactTab);
-    contentDiv.appendChild(header);
-
     const homeHeroText = document.createElement('div');
     homeHeroText.className = 'home-hero-text'; 
     homeHeroText.innerText = 'OH MY GOD, WHY IS THIS SO DELICIOUS?';
