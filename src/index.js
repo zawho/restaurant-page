@@ -1,5 +1,11 @@
-import loadHome from "./home";
+import loadHome from './home';
+import loadMenu from './menu';
+import loadContact from './contact';
 
+const homeTab = document.createElement('button');
+const menuTab = document.createElement('button');
+const contactTab = document.createElement('button');
+const contentDiv = document.getElementById('content');
 
 function createHeader() {
     const docBody = document.querySelector('body');
@@ -7,15 +13,12 @@ function createHeader() {
     const header = document.createElement('header');
     header.className = 'header';
 
-    const homeTab = document.createElement('button');
     homeTab.className = 'home-tab';
     homeTab.innerText = 'home';
 
-    const menuTab = document.createElement('button');
     menuTab.className = 'menu-tab';
     menuTab.innerText = 'menu';
 
-    const contactTab = document.createElement('button');
     contactTab.className = 'contact-tab';
     contactTab.innerText = 'contact';
 
@@ -24,6 +27,21 @@ function createHeader() {
     header.appendChild(contactTab);
     docBody.prepend(header);
 }
+
+function switchTab() {
+    contentDiv.innerHTML = '';
+    if (this === menuTab) {
+        loadMenu();
+    } else if (this === contactTab) {
+        loadContact();
+    } else {
+        loadHome();
+    }
+}
+
+homeTab.addEventListener('click', switchTab);
+menuTab.addEventListener('click', switchTab);
+contactTab.addEventListener('click', switchTab);
 
 createHeader();
 loadHome();
