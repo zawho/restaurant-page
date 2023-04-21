@@ -10,18 +10,17 @@ const contactTab = document.createElement('button');
 const contentDiv = document.getElementById('content');
 
 function createHeader() {
-
     const header = document.createElement('header');
     header.className = 'header';
 
     homeTab.className = 'home-tab';
-    homeTab.innerText = 'home';
+    homeTab.innerText = 'Home';
 
     menuTab.className = 'menu-tab';
-    menuTab.innerText = 'menu';
+    menuTab.innerText = 'Menu';
 
     contactTab.className = 'contact-tab';
-    contactTab.innerText = 'contact';
+    contactTab.innerText = 'Contact';
 
     header.appendChild(homeTab);
     header.appendChild(menuTab);
@@ -33,11 +32,14 @@ function switchTab() {
     contentDiv.innerHTML = '';
     if (this === menuTab) {
         docBody.style.backgroundImage = '';
+        docBody.style.color = 'black';
         loadMenu();
     } else if (this === contactTab) {
         docBody.style.backgroundImage = '';
+        docBody.style.color = 'black';
         loadContact();
     } else {
+        docBody.style.color = 'white';
         loadHome();
     }
 }

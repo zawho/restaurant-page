@@ -11,15 +11,10 @@ function loadHome() {
     homeImg.src = '../src/food.jpg';
     homeImg.alt = 'Sauce being spooned over a salmon cutlet';
 
-    const homeMainText = document.createElement('div');
-    homeMainText.className = 'home-main-text';
-    homeMainText.innerText = `are u ready? to eat? prepare... your body... your mind... 
-    u never had food this good. EAT PRAY LOVE AND EAT AGAIN.`;
-
+    docBody.style.color = 'white';
     docBody.style.backgroundImage = 'url(../src/food.jpg';
 
     contentDiv.appendChild(homeHeroText);
-    contentDiv.appendChild(homeMainText);
 }
 
 export default loadHome;
