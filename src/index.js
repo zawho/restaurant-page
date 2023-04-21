@@ -31,11 +31,11 @@ function createHeader() {
 function switchTab() {
     contentDiv.innerHTML = '';
     if (this === menuTab) {
-        docBody.style.backgroundImage = '';
+        docBody.style.backgroundImage = 'url(../dist/images/pizza.jpg)';
         docBody.style.color = 'black';
         loadMenu();
     } else if (this === contactTab) {
-        docBody.style.backgroundImage = '';
+        docBody.style.backgroundImage = 'url(../dist/images/restaurant.jpg)';
         docBody.style.color = 'black';
         loadContact();
     } else {
