@@ -31,10 +31,8 @@ function createHeader() {
 function switchTab() {
     contentDiv.innerHTML = '';
     if (this === menuTab) {
-        docBody.style.backgroundImage = 'url(../dist/images/pizza.jpg)';
         loadMenu();
     } else if (this === contactTab) {
-        docBody.style.backgroundImage = 'url(../dist/images/restaurant.jpg)';
         loadContact();
     } else {
         loadHome();

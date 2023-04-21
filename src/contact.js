@@ -1,4 +1,5 @@
 function loadContact() {
+    const docBody = document.querySelector('body');
     const contentDiv = document.getElementById('content');
 
     const contactDiv = document.createElement('div');
@@ -14,6 +15,8 @@ function loadContact() {
     Email: iamthechef@chefmail.com`
     
     contentDiv.appendChild(contactDiv);
+
+    docBody.style.backgroundImage = 'url(./images/restaurant.jpg)';
 }
 
 export default loadContact;

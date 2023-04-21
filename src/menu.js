@@ -1,4 +1,5 @@
 function loadMenu() {
+    const docBody = document.querySelector('body');
     const contentDiv = document.getElementById('content');
 
     const menuList = document.createElement('ul');
@@ -20,6 +21,8 @@ function loadMenu() {
     menuList.appendChild(menuItem2);
     menuList.appendChild(menuItem3);
     contentDiv.appendChild(menuList);
+
+    docBody.style.backgroundImage = 'url(./images/pizza.jpg)';
 }
 
 export default loadMenu;
