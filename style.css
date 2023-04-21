@@ -3,6 +3,7 @@ body {
     font-family: 'oswald', sans-serif;
     height: 100vh;
     background-color: rgb(240, 255, 220);
+    background-position: center;
 }
 
 .header {
@@ -55,3 +56,23 @@ ul {
     height: fit-content;
     padding: 10px;
 }
+
+@media only screen and (max-width: 600px) {
+    .header {
+        gap: 50px;
+    }
+
+    .home-hero-text {
+        font-size: 5rem;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    .header {
+        gap: 10px;
+    }
+
+    .home-hero-text {
+        font-size: 4rem;
+    }
+} 
