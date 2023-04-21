@@ -8,7 +8,6 @@ function loadHome() {
 
     const homeImg = document.createElement('img');
     homeImg.className = 'home-img';
-    homeImg.src = '../src/food.jpg';
     homeImg.alt = 'Sauce being spooned over a salmon cutlet';
 
     docBody.style.color = 'white';
