@@ -19,6 +19,7 @@ button {
     background-color: transparent;
     font-family: 'Pinyon Script', cursive;
     font-size: 2.3rem;
+    color: black;
 }
 
 #content {
@@ -59,20 +60,24 @@ ul {
 
 @media only screen and (max-width: 600px) {
     .header {
-        gap: 50px;
+        gap: 10px;
     }
 
     .home-hero-text {
         font-size: 5rem;
     }
+
+    ul {
+        font-size: 3rem;
+    }
 }
 
 @media only screen and (max-width: 430px) {
-    .header {
-        gap: 10px;
-    }
-
     .home-hero-text {
         font-size: 4rem;
+    }
+
+    ul {
+        font-size: 2.5rem;
     }
 } 
