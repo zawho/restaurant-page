@@ -12,7 +12,7 @@ function loadHome() {
     homeImg.alt = 'Sauce being spooned over a salmon cutlet';
 
     docBody.style.color = 'white';
-    docBody.style.backgroundImage = 'url(../src/food.jpg)';
+    docBody.style.backgroundImage = 'url(../dist/food.jpg)';
 
     contentDiv.appendChild(homeHeroText);
 }
