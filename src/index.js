@@ -1,6 +1,7 @@
 import loadHome from './home';
 import loadMenu from './menu';
 import loadContact from './contact';
+import './style.css';
 
 const homeTab = document.createElement('button');
 const menuTab = document.createElement('button');
