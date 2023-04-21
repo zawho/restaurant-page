@@ -1,7 +1,7 @@
 import loadHome from './home';
 import loadMenu from './menu';
 import loadContact from './contact';
-import './style.css';
+import '../dist/style.css';
 
 const docBody = document.querySelector('body');
 const homeTab = document.createElement('button');
