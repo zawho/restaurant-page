@@ -1,4 +1,5 @@
 function loadHome() {
+    const docBody = document.querySelector('body');
     const contentDiv = document.getElementById('content');
 
     const homeHeroText = document.createElement('div');
@@ -15,8 +16,9 @@ function loadHome() {
     homeMainText.innerText = `are u ready? to eat? prepare... your body... your mind... 
     u never had food this good. EAT PRAY LOVE AND EAT AGAIN.`;
 
+    docBody.style.backgroundImage = 'url(../src/food.jpg';
+
     contentDiv.appendChild(homeHeroText);
-    contentDiv.appendChild(homeImg);
     contentDiv.appendChild(homeMainText);
 }
 

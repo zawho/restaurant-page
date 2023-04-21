@@ -3,13 +3,13 @@ import loadMenu from './menu';
 import loadContact from './contact';
 import './style.css';
 
+const docBody = document.querySelector('body');
 const homeTab = document.createElement('button');
 const menuTab = document.createElement('button');
 const contactTab = document.createElement('button');
 const contentDiv = document.getElementById('content');
 
 function createHeader() {
-    const docBody = document.querySelector('body');
 
     const header = document.createElement('header');
     header.className = 'header';
@@ -32,8 +32,10 @@ function createHeader() {
 function switchTab() {
     contentDiv.innerHTML = '';
     if (this === menuTab) {
+        docBody.style.backgroundImage = '';
         loadMenu();
     } else if (this === contactTab) {
+        docBody.style.backgroundImage = '';
         loadContact();
     } else {
         loadHome();
