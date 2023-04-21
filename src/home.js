@@ -4,7 +4,7 @@ function loadHome() {
 
     const homeHeroText = document.createElement('div');
     homeHeroText.className = 'home-hero-text'; 
-    homeHeroText.innerText = 'OH MY GOD, WHY IS THIS SO DELICIOUS?';
+    homeHeroText.innerText = 'OH MY GOD WHY IS THIS SO DELICIOUS?';
 
     const homeImg = document.createElement('img');
     homeImg.className = 'home-img';

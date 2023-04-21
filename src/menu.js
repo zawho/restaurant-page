@@ -6,18 +6,15 @@ function loadMenu() {
 
     const menuItem1 = document.createElement('li');
     menuItem1.className = 'menu-items';
-    menuItem1.innerText = `mystery pizzaaaa
-    we can't tell u the ingredients... good luck`;
+    menuItem1.innerText = `Mystery Pizza - $2`;
 
     const menuItem2 = document.createElement('li');
     menuItem2.className = 'menu-items';
-    menuItem2.innerText = `saucy serpents
-    succulent serpentine snacks... suggest... satisfied slurping...`;
+    menuItem2.innerText = `Saucy Serpents - $100`;
 
     const menuItem3 = document.createElement('li');
     menuItem3.className = 'menu-items';
-    menuItem3.innerText = `mug-o-glug
-    GLUG GLUG GLUG GLUG GLUG`;
+    menuItem3.innerText = `Mug-o-Glug - ??`;
 
     menuList.appendChild(menuItem1);
     menuList.appendChild(menuItem2);

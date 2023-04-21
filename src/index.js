@@ -39,7 +39,6 @@ function switchTab() {
         docBody.style.color = 'black';
         loadContact();
     } else {
-        docBody.style.color = 'white';
         loadHome();
     }
 }
